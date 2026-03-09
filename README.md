@@ -1,6 +1,6 @@
 # LRU Cache Viz
 
-LRU cache where the only human-reviewed code is the [Quint spec](lru_cache.qnt). The TypeScript implementation and UI are LLM-generated. Correctness is proven with [Quint](https://github.com/informalsystems/quint) and [`quint-connect`](https://github.com/nicefirefi/quint-connect).
+LRU cache where the only human-reviewed code is the [Quint spec](lru_cache.qnt). The TypeScript implementation and UI are LLM-generated. Correctness is proven with [Quint](https://github.com/informalsystems/quint) and [`quint-connect`](https://github.com/dearlordylord/quint-connect-ts).
 
 ![screenshot](screenshot.png)
 
