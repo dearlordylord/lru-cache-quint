@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #111;
+  color: #e5e5e5;
+  padding: 2rem;
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  color: #9ca3af;
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  color: #d1d5db;
+}
+
+h3 {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  color: #d1d5db;
+}
+
+.section {
+  margin-bottom: 1.5rem;
+}
+
+/* DLL View */
+.dll-view {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem;
+  min-height: 3rem;
+}
+
+.dll-empty {
+  color: #6b7280;
+  font-style: italic;
+}
+
+.dll-node {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  background: #1f2937;
+  min-width: 3rem;
+  text-align: center;
+}
+
+.dll-node-value {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+.dll-arrow {
+  margin: 0 0.25rem;
+  color: #6b7280;
+}
+
+.dll-labels {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.75rem;
+  margin-left: 0.5rem;
+}
+
+/* Map View */
+.map-view table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 300px;
+}
+
+.map-view th,
+.map-view td {
+  text-align: left;
+  padding: 0.25rem 0.75rem;
+  border-bottom: 1px solid #374151;
+}
+
+.map-view th {
+  color: #9ca3af;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #1f2937;
+  border-radius: 8px;
+}
+
+.controls-nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.controls-form {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.controls-capacity {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.controls-capacity input {
+  width: 3.5rem;
+}
+
+button, select, input {
+  padding: 0.35rem 0.6rem;
+  border: 1px solid #4b5563;
+  border-radius: 4px;
+  background: #374151;
+  color: #e5e5e5;
+  font-size: 0.85rem;
+}
+
+button:hover:not(:disabled) {
+  background: #4b5563;
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+input[type="number"] {
+  width: 4.5rem;
+}
+
+/* Action Log */
+.action-log {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.action-log-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.action-log-entry {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: monospace;
+  font-size: 0.85rem;
+}
+
+.action-log-entry:hover {
+  background: #374151;
+}
+
+.action-log-entry.active {
+  background: #1e3a5f;
+  font-weight: bold;
+}
+
+.action-log-entry.future {
+  opacity: 0.4;
+}
