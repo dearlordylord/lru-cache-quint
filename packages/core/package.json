@@ -9,8 +9,10 @@
     "test": "vitest run"
   },
   "devDependencies": {
-    "@firfi/quint-connect": "^0.2.2",
-    "@informalsystems/quint": "^0.23.0",
+    "@effect/platform-node": "^0.104.1",
+    "@firfi/quint-connect": "^0.3.2",
+    "@informalsystems/quint": "^0.31.0",
+    "effect": "^3.19.15",
     "typescript": "^5.7.0",
     "vitest": "^3.0.0"
   }
