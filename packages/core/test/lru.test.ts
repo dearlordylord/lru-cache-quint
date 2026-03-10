@@ -3,7 +3,7 @@ import { fileURLToPath } from "node:url";
 import { Effect, Schema } from "effect";
 import { NodeContext } from "@effect/platform-node";
 import { defineDriver, ITFBigInt, ITFMap, quintRun, stateCheck } from "@firfi/quint-connect/effect";
-import { init, access, insert } from "../src/lru.js";
+import { init, access, insert } from '../src';
 
 const spec = fileURLToPath(new URL("../../../lru_cache.qnt", import.meta.url));
 
@@ -84,6 +84,7 @@ describe("LRU cache matches Quint spec", () => {
               hd: s["lru_cache_test::lru_cache::hd"],
               tl: s["lru_cache_test::lru_cache::tl"],
             })),
+            Effect.orDie,
           ),
           (spec, impl) =>
             spec.hd === impl.hd &&
