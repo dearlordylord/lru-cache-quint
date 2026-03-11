@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@effect/platform-node": "^0.104.1",
-    "@firfi/quint-connect": "^0.3.2",
+    "@firfi/quint-connect": "^0.4.2",
     "@informalsystems/quint": "^0.31.0",
     "effect": "^3.19.15",
     "typescript": "^5.7.0",
